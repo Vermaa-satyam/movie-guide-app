@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    background:  #f5f5f5;
+}
+
+/* navbar styling */
+
+nav{
+    background : #232f3e ;
+    color: white;
+}
+.navbar{
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px;
+}
+.search input , button{
+    padding: 5px 10px;
+    border: none;
+    font-size: 16px;
+}
+.search input{
+    border-radius: 3px 0 0 3px ;
+}
+.search button{
+    border-radius: 0 3px 3px 0 ;
+    cursor: pointer;
+    background: #f5c518;
+    transition: all 0.2s;
+}
+.search button:hover{
+    background: #ffdd45;
+}
+/* main movie section styling */
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-block: 38px;
+}
+main section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+.movie-container{
+    display: flex;
+    background: #fff;
+    box-shadow:  0px 0px 10px #ccc;
+    width: 80%;
+    border-radius: 5px;
+    justify-content: center;
+}
+.movie-container.no-bcg{
+    background: none;
+    box-shadow: none;
+    align-items: center;
+}
+.movie-poster img {
+    height: 450px;
+    margin-right: 30px;
+    border-radius: 5px 0 0 5px;
+}
+.movie-info{
+    padding-inline: 15px;
+}
+.movie-info h2 {
+    text-align: center;
+    font-size: 32px;
+    margin: 20px 0 12px 0;
+}
+.movie-info h2+p{
+    text-align: center;
+}
+.movie-info .genre-element p{
+    background: #232f3e;
+    color: #fff;
+    padding: 5px 14px;
+    margin-inline: 5px;
+    border: 2px solid #000;
+    border-radius: 6px;
+    font-weight: 700;
+    overflow-x: auto;
+}
+.genre-element{
+    display: flex;
+    justify-content: center;
+    margin-block: 5px;
+}
+.movie-info p{
+    font-size: 18px;
+    margin-block: 16px;
+    line-height: 24px;
+
+}
+footer{
+    text-align: center;
+    background : #232f3e;
+    color: #fff;
+    padding-block: 20px;
+    margin-top: 40px;
+    font-size: 20px;
+    
+}
+
+/* code for responsivness  */
+ @media (max-width : 900px){
+    .movie-container{
+        flex-direction: column;
+    }
+    .movie-poster img {
+        width: 100%;
+        margin-right: 0;
+        height: fit-content;
+    }
+    .movie-info{
+        padding-inline: 30px;
+    }
+ }
+ @media (max-width : 630px){
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .search{
+        margin-top: 10px;
+    }
+ }
