@@ -8,4 +8,5 @@ Release Date and Runtime: Check out when the movie was released and its duration
 Main Cast: See a list of featured actors for each film.
 Plot Summary: A brief synopsis gives users a sense of the storyline without spoilers.
 Poster Display: High-quality movie posters add a visual flair to each search, enhancing the browsing experience.
-The app is responsive, ensuring a seamless experience across devices, and integrates data from the OMDb API to provide reliable, real-time information. Perfect for casual movie fans and film buffs alike, Movie Guide App makes it easy to find and enjoy movies with just a quick search!
+The app is responsive, ensuring a seamless experience across devices, and integrates data from the OMDb API to provide reliable, real-time information. Perfect for casual movie fans and film buffs alike, Movie Guide App makes it easy to find and enjoy movies with just a quick search!..
+
